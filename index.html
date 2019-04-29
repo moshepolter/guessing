@@ -4,23 +4,15 @@
 	<title>Guessing Game</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<style>
-	body{
-		font-family: Helvetica;
-      	font-weight: bold;
-      	width: 1000px;
-	}
-	body::before {
-	 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg");
-	 	position: absolute;
-	 	z-index: -1;
-	  	top: 0;
-	 	bottom: 0;
-	  	left: 0;
-	  	right: 0;
-	  	content: "";
-	  	opacity: 1;
-	  	filter: blur(0px);
-	}
+		html{
+			background-image:
+			url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg");
+			font-family: Helvetica;
+	      	font-weight: bold;
+	      	width: 1000px;
+	      	background-size: cover;
+	      	width: 1280px;
+		}
 		.input{
 			background-color: black;
 			color: white;
@@ -32,13 +24,14 @@
       		opacity: 1 !important;
 		}
 		.div{		
-			float: left;
+			display: inline-block;
 			border: dashed;
 			margin-left: 530px;
 			background-color: white;
 			margin-top: 100px;
 			opacity: .6;
 			border-radius: 5px;
+			bottom: 0;
 			
 		}
 		.bu{
@@ -60,7 +53,7 @@
 <input type="text" id="#" value="0" placeholder="Enter a number" class="input"><br><br>
 <button onclick="g()" class="bu">click here to guess</button>
 </div>
-<p style="margin-top: 423px; color: white; margin-right: 1000px; opacity: 1">&copy; all rights resrved moshe polter</p>
+<p style="margin-top: 180px; color: white; margin-right: 1000px; opacity: 1">&copy; all rights resrved moshe polter</p>
 <script type="text/javascript" src="gj.js"></script>
 </body>
 </html>
