@@ -3,16 +3,9 @@ const ranN = Math.floor(Math.random() * 29 + 1);
 let count = 0;
 const g = () =>{
 	//function gor guess
- 	count += 1;
- 	let attempt = 5 - count;
-	if(count == 6 || attempt == -1){
-		document.getElementById("displayNumber").innerHTML = `Too many tries the answer is ${ranN}`
-		//how many clicks if more than 5 run this code
-	}
 	//if less than 5 continue running this code
-	else{
 		const numP = document.getElementById("#").value;
-	   if(numP < ranN){
+	  if(numP < ranN){
       //if you guessed to high run this code
       document.getElementById("displayNumber").innerHTML = `The number is higher. You have ${5 - count} attempts left`;
     }
@@ -25,9 +18,13 @@ const g = () =>{
       document.getElementById("displayNumber").innerHTML = `You Guessed The Right Number on attempt: ${count}. Thank You for playing`
     }
 		//after first guess local storage says the number uncomment line below
+	if(count > 5){
+		document.getElementById("displayNumber").innerHTML = `Too many tries the answer is ${ranN}`
+		//how many clicks if more than 5 run this code
+	}
+	count += 1;
 		
 		window.localStorage.setItem('number', ranN);
 		console.log(window.localStorage.getItem('number'));	
 		
-	}
-};
+}
