@@ -39,15 +39,24 @@
 			margin-left: 22px;
 			background-color: black;
 			color: white;
-			margin-bottom: 25px;
 			font-family: Helvetica;
       		font-weight: bold;
       		opacity: 1 !important;
+      		margin-top: 10px;
 		}
 		#displayNumber{
 			color: white;
 			font-size: 30px;
 			margin-left: 0px;
+		}
+		#restart{
+			background-color: black;
+			color: white;
+			margin-left: 60px;
+			margin-top: 10px;
+			margin-bottom: 5px;
+			font-family: Helvetica;
+			font-weight: bold;
 		}
 	</style>
 </head>
@@ -55,8 +64,9 @@
 <h1 style="margin-left: 460px; text-transform: uppercase; color: white;">Guess The Number</h1>
 <div class="div">
 <div style="background-color: black; color: white; text-align: center; padding-bottom: 5px;"><br><h3>Enter A Number<br>1-30</h3></div>
-<input type="text" id="#" value="0" placeholder="Enter a number" class="input"><br><br>
-<button onclick="g()" class="bu">Click <i style="color: skyblue;">here</i> to guess</button>
+<input type="number" id="#" value="15" placeholder="Enter a number" class="input"><br>
+<button onclick="g()" class="bu">Click <i style="color: skyblue;">here</i> to guess</button><br>
+<button id="restart" onclick="r()">Restart</button>
 </div>
 <div id="displayNumber">You have 5 attempts</div>
 <p style="margin-top: 143px; color: white; margin-right: 1000px; opacity: 1">&copy; all rights resrved moshe polter</p>
