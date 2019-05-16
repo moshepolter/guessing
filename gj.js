@@ -4,21 +4,21 @@ let count = 0;
 const g = () =>{
 	//function gor guess
 	//if less than 5 continue running this code
-		const numP = document.getElementById("#").value;
-		if (numP <= 0 || numP > 30){
-			document.getElementById("displayNumber").innerHTML = `You must enter a number 1 - 30`
-		}
-		    else if(numP == ranN){
+	const numP = document.getElementById("#").value;
+	if (numP <= 0 || numP > 30){
+		document.getElementById("displayNumber").innerHTML = `You must enter a number 1 - 30`
+	}
+	else if(numP == ranN){
       //if you guessed the right number run this code
       document.getElementById("displayNumber").innerHTML = `You Guessed The Right Number on attempt: ${count + 1}. Thank You for playing`
-      setTimeout(function() {location.reload()}, 2000);
+      setTimeout(function() {location.reload()}, 5000);
     }
-		else{
+	else{
 		count += 1;
-			if(count > 4){
-		document.getElementById("displayNumber").innerHTML = `Too many tries the answer is ${ranN}`;
-		setTimeout(function() {location.reload()}, 2000);
-		//how many clicks if more than 5 run this code
+		if(count > 4){
+			document.getElementById("displayNumber").innerHTML = `Too many tries the answer is ${ranN}`;
+			setTimeout(function() {location.reload()}, 5000);
+			//how many clicks if more than 5 run this code
 	}
 	else{
 	  if(numP < ranN){
