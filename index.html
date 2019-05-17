@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
 <head>
 	<title>Guessing Game</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -57,10 +57,35 @@
 			font-family: Helvetica;
 			font-weight: bold;
 		}
-@media only screen and (max-width: 480px){
-			.div
-			{
-				font-size: 100px;
+@media only screen and (max-width: 980px){
+			.div{
+				font-size: 30px;
+				padding-bottom: 50px;
+				padding-bottom: 30px;
+				margin-left: 450px;
+
+			}
+			.bu{
+				margin-left: 35px;
+				font-size: 30px;
+				padding-bottom: 3px;
+
+			}
+			.input{
+				height: 30px;
+				font-size: 29px;
+				margin-left: 25px;
+				padding: 2px 0px 2px 0px;
+			}
+			.re{
+				font-size: 30px;
+				margin-left: 120px !important;
+			}
+			.display{
+				font-size: 40px !important;
+			}
+			.p{
+				font-size: 20px !important
 			}
 		}
 	</style>
@@ -69,13 +94,15 @@
 <h1 style="margin-left: 460px; text-transform: uppercase; color: white;">Guess The Number</h1>
 <div class="div">
 <div style="background-color: black; color: white; text-align: center; padding-bottom: 5px;"><br><h3>Guess A Number<br>1-30</h3></div>
+<div class="button">
 <input type="number" id="#" value="15" placeholder="Enter a number" class="input"><br>
 <button onclick="g()" class="bu">Click <i style="color: skyblue;">here</i> to guess</button><br>
-<button id="restart" onclick="r()">Restart</button>
+<button id="restart" onclick="r()" class="re">Restart</button>
 </div>
-<div id="displayNumber">You have 5 attempts</div>
+</div>
+<div id="displayNumber" class="display">You have 5 attempts</div>
 <div class="code">
-<p style="margin-top: 143px; color: white; margin-right: 1000px; opacity: 1">&copy; all rights resrved moshe polter</p>
+<p style="margin-top: 143px; color: white; margin-right: 1000px; opacity: 1" class="p">&copy; all rights resrved moshe polter</p>
 </div>
 <script type="text/javascript" src="gj.js"></script>
 </body>
