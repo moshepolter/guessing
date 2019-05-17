@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html">
+<html>
 <head>
 	<title>Guessing Game</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -10,7 +10,6 @@
 			url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg");
 			font-family: Helvetica;
 	      	font-weight: bold;
-	      	background-size: cover;
 	      	width: 1280px;
 		}
 		.input{
@@ -63,6 +62,7 @@
 				padding-bottom: 50px;
 				padding-bottom: 30px;
 				margin-left: 450px;
+				margin-top: 600px;
 
 			}
 			.bu{
@@ -87,10 +87,19 @@
 			.p{
 				font-size: 20px !important
 			}
+
+		}
+		@media only screen and (min-width: 1200px)
+		{
+			.div
+			{
+				margin-left: 810px;
+			}
 		}
 	</style>
 </head>
 <body>
+<div class="all">
 <h1 style="margin-left: 460px; text-transform: uppercase; color: white;">Guess The Number</h1>
 <div class="div">
 <div style="background-color: black; color: white; text-align: center; padding-bottom: 5px;"><br><h3>Guess A Number<br>1-30</h3></div>
@@ -105,5 +114,6 @@
 <p style="margin-top: 143px; color: white; margin-right: 1000px; opacity: 1" class="p">&copy; all rights resrved moshe polter</p>
 </div>
 <script type="text/javascript" src="gj.js"></script>
+</div>
 </body>
 </html>
