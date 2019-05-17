@@ -10,7 +10,6 @@
 			url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg");
 			font-family: Helvetica;
 	      	font-weight: bold;
-	      	width: 1000px;
 	      	background-size: cover;
 	      	width: 1280px;
 		}
@@ -58,6 +57,12 @@
 			font-family: Helvetica;
 			font-weight: bold;
 		}
+@media only screen and (max-width: 480px){
+			.div
+			{
+				font-size: 100px;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -69,7 +74,9 @@
 <button id="restart" onclick="r()">Restart</button>
 </div>
 <div id="displayNumber">You have 5 attempts</div>
+<div class="code">
 <p style="margin-top: 143px; color: white; margin-right: 1000px; opacity: 1">&copy; all rights resrved moshe polter</p>
+</div>
 <script type="text/javascript" src="gj.js"></script>
 </body>
 </html>
