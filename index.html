@@ -42,6 +42,13 @@
       		opacity: 1 !important;
       		margin-top: 10px;
 		}
+		.hint{
+			color: white;
+			font-family: Helvetica;
+			background-color: black;
+			font-style: Helvetica;
+			font-weight: bold;
+		}
 		#displayNumber{
 			color: white;
 			font-size: 30px;
@@ -123,22 +130,25 @@
 		}
 	</style>
 </head>
-<body>
-<div class="all">
-<h1 style="margin-left: 460px; text-transform: uppercase; color: white;">Guess The Number</h1>
-<div class="div">
-<div style="background-color: black; color: white; text-align: center; padding-bottom: 5px;" class="G"><br><h3>Guess A Number<br>1-100</h3></div>
-<div class="button">
-<input type="number" id="#" value="50" placeholder="Enter a number" class="input"><br>
-<button onclick="g()" class="bu">Click <i style="color: skyblue;">here</i> to guess</button><br>
-<button id="restart" onclick="r()" class="re">Restart</button>
-</div>
-</div>
-<div id="displayNumber" class="display">You have 10 attempts</div>
-<div class="code">
-<p style="margin-top: 143px; color: white; margin-right: 1000px; opacity: 1" class="p">&copy; all rights resrved moshe polter</p>
-</div>
-<script type="text/javascript" src="gj.js"></script>
-</div>
-</body>
+	<body>
+			<div class="all">
+			<h1 style="margin-left: 460px; text-transform: uppercase; color: white;">Guess The Number</h1>
+			<div class="div">
+			<div style="background-color: black; color: white; text-align: center; padding-bottom: 5px;" class="G"><br><h3>Guess A Number<br>1-100</h3></div>
+			<div class="button">
+			<input type="number" id="#" value="50" placeholder="Enter a number" class="input"><br>
+			<button onclick="g()" class="bu">Click <i style="color: skyblue;">here</i> to guess</button><br>
+			<button id="restart" onclick="r()" class="re">Restart</button>
+			</div>
+			</div>
+			<div id="displayNumber" class="display">You have 10 attempts</div>
+			<div>
+				<input type="button" id="hint" class="hint" value="Hint" onclick="hint()"/>
+			</div>
+			<div class="code">
+			<p style="margin-top: 143px; color: white; margin-right: 1000px; opacity: 1" class="p">&copy; all rights resrved moshe polter</p>
+			</div>
+			<script type="text/javascript" src="gj.js"></script>
+			</div>
+	</body>
 </html>

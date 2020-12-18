@@ -1,5 +1,33 @@
 const ranN = Math.floor(Math.random() * 99 + 1);
+const ran1 = ranN + Math.floor(Math.random() * 6 - 5);
+const ran2 = ranN + Math.floor(Math.random() * 6 + 5);
 //random number
+const hint = () =>{
+	//hint
+	//if the number is 95 dont display between 90 and 105
+	if (ranN >= 95) {
+		alert("The number is over 95")
+	} 
+	//if the number is not over 95 display regular hint
+	else {
+		alert("Between " + ran1 + " and " + ran2)
+	}
+}
+
+/*const hint = () =>{
+	if(ranN + Math.floor(Math.random() * 5 - 5) <= 100){
+		const m1 = ranN + Math.floor(Math.random() * 7 - 5) - (ranN + Math.floor(Math.random() * 7 - 5) < 100)
+		console.log("The number is between " + m1 + "-" + 100)
+	}
+	if (ranN + Math.floor(Math.random() * 5 - 5) >= 0) {
+		const m2 = ranN + Math.floor(Math.random() * 7 - 5) + (ranN + Math.floor(Math.random() * 7 - 5) < 0)
+		console.log("The number is between " + m2 + "-" + 0)
+	}
+	else{
+	console.log("The number is between " + ran1 + "-" + ran2);
+	}
+
+};*/
 let count = 0;
 const g = () =>{
 	//function gor guess
